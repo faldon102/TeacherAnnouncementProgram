@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher Announcements Page</title>
+        <script src="teacher.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body style="background-color: #093373; width: 100%; min-height: 1600px; position: relative;" onscroll="line()" onload="kmLogo()">
+
+        <div class="header">
+            <b style="font-weight: 170px; font-size: 100px;">Authorization</b>
+        </div>
+
+        <hr id="headerLine">
+
+        <!-- NORTH PARK SS LOGO LINKING TO HOMEPAGE -->
+        <a href="./homepage.html">
+            <img src="./logo.png" id="northParkLogo">
+        </a>
+
+        <div id="aut_title" style="color: white; font-size: 25px; position: absolute; top: 230px; right: 30px; text-align: center; width: 100%; font-family: Andale Mono, AndaleMono, monospace;">
+            <h1>Please Fill In All Information</h1>
+        </div>
+
+        <form method="POST" action="www.google.ca">
+
+            <!-- TEXTBOX FOR FULL NAME -->
+            <div class="authorization" id="authorization_name" style="top: 400px; right: 700px; ">
+                <label for="name" style="position: relative; top: -10px; right: -10px;">Name (first, last)</label>
+                <textarea name="name" id="name" cols="15" rows="1" class="nameAndSex" required></textarea>
+            </div>
+
+            <!-- TEXTBOX FOR GENDER -->
+            <div class="authorization" id="authorization_sex" style="top: 400px; right: 300px;">
+                <label for="sex" style="position: relative; top: -10px; right: -10px;">Sex (M/F)</label>
+                <textarea name="sex" id="sex" cols="5" rows="1" class="nameAndSex" required></textarea>
+            </div>
+
+            <!-- CONFIRM BUTTON -->
+            <button id="confirm" onclick="authorize()">Confirm</button>
+
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <p id="terms"></p>
+
+            <a href="createOrDelete.html" id="continueToAnn" onclick="entered()">Continue</a>
+
+        </form>
+        
+        <!-- FOOTER -->
+        <div id="footer">
+            
+            <!-- CONTACTS -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 560px; left: 200px;">Phone: 647 - 416 - 7410</h2>
+            <h2 class="h2Footer" style="position: absolute; bottom: 510px; left: 200px;">Email: ann.program@gmail.com</h2>
+
+            <hr id="shorterLineFooter">
+            
+            <!-- FEEDBACK SECTION -->
+            <form action="mailto: 861762@pdsb.net" method="POST">
+                <h1 class="h1Footer" style="position: absolute; bottom: 360px; left: 200px;">Feedback</h1>
+                <textarea id="feedbackTextarea" name="feedback" cols="30" rows="8"></textarea>
+                <button id="feedbackSendBtn">Send</button>
+            </form>
+            
+            <!-- ABOUT US -->
+            <div id="aboutUs">
+                <h1 class="h1Footer" style="position: absolute; bottom: 550px; right: 450px;">About Us</h1>
+                <p class="pFooter" style="position: absolute; bottom: 330px; right: 120px; width: 500px; height: 200px;">Founded in May of 2021, we, Announcements Co., provide a variety of services to our clients. Our flagship software products are the “Teacher Announcement Program,” enabling all teachers of North Park Secondary School to upload school announcements, and the “School Search Program,” enabling students to view all uploaded announcements, and schedule accordingly.</p>
+                <hr id="longerLineFooter">
+            </div>
+            
+            <!-- SOCIAL MEDIA LOGOS AND LINKS -->
+            <h1 class="h1Footer" style="position: absolute; bottom: 160px; right: 435px;">Follow Us</h1>
+            <a href="https://www.instagram.com/explore/locations/511992834/north-park-secondary-school/?hl=en">
+                <img class="instagramLogoFooter" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+            </a>
+
+            <a href="https://twitter.com/northparkssca?lang=en">
+                <img class="twitterLogoFooter" src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png">
+            </a>
+
+            <a href="https://m.facebook.com/profile.php?id=106176169421629">
+                <img class="facebookLogoFooter" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png">
+            </a>
+
+            <a href="https://ca.linkedin.com/company/north-park-secondary-school">
+                <img class="linkedInLogoFooter" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png">
+            </a>
+
+            <!-- COPYRIGHT SECTION -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 20px; left: 60px;">Copyright © 2021 Krish Mehta. All rights reserved.</h2>
+        
+            <a href="./ideas.html" id="logoTextInFooter">KM</a>
+            <hr id="smallLogoLineInFooter">
+            <hr id="largeLogoLineInFooter">
+            
+        </div>
+
+    </body>
+</html>

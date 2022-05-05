@@ -1,0 +1,972 @@
+                                                                        /* HEADER FOR EVERY PAGE */
+
+.header {
+    background: #32c2d1;
+    width: 100%;
+    height: 100px; 
+    position: fixed; 
+    top: 0px; 
+    right: 0px; 
+    text-align: center; 
+    padding: 50px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    z-index: 999;
+}
+
+#headerLine {
+    background-color: black; 
+    position: fixed; 
+    top: 190px; 
+    right: -400px; 
+    width: 2500px; 
+    height: 5px; 
+    z-index: 999; 
+    border: none;
+    visibility: hidden;
+}
+
+#logoTextInFooter {
+    font-size: 40px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: greenyellow; 
+    position: absolute; 
+    bottom: 20px; 
+    right: 200px; 
+    text-decoration: none; 
+    z-index: 999;
+}
+
+#smallLogoLineInFooter {
+    width: 20px; 
+    height: 5px; 
+    background-color: greenyellow; 
+    position: absolute; 
+    bottom: 35px; 
+    right: 270px; 
+    border: none; 
+    border-radius: 3px; 
+    z-index: 999;
+}
+
+#largeLogoLineInFooter {
+    width: 150px; 
+    height: 5px; 
+    background-color: greenyellow; 
+    position: absolute; 
+    bottom: 35px; 
+    right: 40px; 
+    border: none; 
+    border-radius: 3px;
+}
+
+                                                                        /* FOOTER FOR EVERY PAGE */
+
+#footer {
+    background-color: #bfd9da; 
+    width: 1440px; 
+    height: 680px; 
+    position: absolute; 
+    bottom: -10px; 
+    left: -10px;
+}
+
+/* FEEDBACK TEXAREA */
+#feedbackTextarea {
+    color: black; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 20px;
+    position: absolute; 
+    bottom: 180px; 
+    left: 200px; 
+    border: gray;
+}
+
+/* FEEDBACK SEND BUTTON */
+#feedbackSendBtn {
+    position: absolute; 
+    bottom: 120px; 
+    left: 505px; 
+    background: #bfd9da; 
+    text-decoration: none; 
+    border: none; 
+    color: black; 
+    height: 40px; 
+    width: 85px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 30px;
+}
+#feedbackSendBtn:hover {
+    transition-duration: 0.3s;
+    color: white;
+    background-color: yellowgreen;
+}
+
+/* INSTAGRAM LOGO LINK */
+.instagramLogoFooter {
+    position: absolute; 
+    bottom: 110px; 
+    right: 570px; 
+    height: 55px; 
+    width: 55px;
+}
+.instagramLogoFooter:hover {
+    filter: brightness(80%)
+}
+
+/* TWITTER LOGO LINK */
+.twitterLogoFooter {
+    position: absolute; 
+    bottom: 110px; 
+    right: 490px; 
+    height: 55px; 
+    width: 55px;
+}
+.twitterLogoFooter:hover {
+    filter: brightness(80%)
+}
+
+/* FACEBOOK LOGO LINK */
+.facebookLogoFooter {
+    position: absolute; 
+    bottom: 110px; 
+    right: 395px; 
+    height: 55px; 
+    width: 95px;
+}
+.facebookLogoFooter:hover {
+    filter: brightness(80%)
+}
+
+/* LINKEDIN LOGO LINK */
+.linkedInLogoFooter {
+    position: absolute; 
+    bottom: 103px; 
+    right: 335px; 
+    height: 67px; 
+    width: 67px;
+} 
+.linkedInLogoFooter:hover {
+    filter: brightness(80%)
+}
+
+/* h1, h2, AND p TEXT */
+.h1Footer, .h2Footer, .pFooter {
+    color: black; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+}
+.h1Footer {
+    font-size: 35px;
+}
+.h2Footer, .pFooter {
+    font-size: 20px;
+}
+
+/* BOTH BLACK LINES */
+#shorterLineFooter {
+    width: 360px; 
+    height: 5px; 
+    position: absolute; 
+    bottom: 450px; 
+    left: 200px; 
+    background-color: black; 
+    border: none;
+}
+#longerLineFooter {
+    background-color: black; 
+    width: 500px; 
+    height: 5px; 
+    position: absolute; 
+    bottom: 260px; 
+    right: 120px; 
+    border: none;
+}
+
+
+                                                                        /* NORTH PARK LOGO */
+
+#northParkLogo {
+    position: fixed; 
+    top: 0px; 
+    left: -10px; 
+    width: 150px; 
+    height: 150px; 
+    z-index: 999;
+}
+#northParkLogo:hover {
+    transition-duration: 0.1s;
+    filter: brightness(130%)
+}
+
+
+                                                                        /* FAVORITE ANNOUNCEMENTS BUTTON */
+
+#favoriteAnn {
+    position: fixed; 
+    width: 70px; 
+    height: 70px; 
+    z-index: 999; 
+    top: 25px; 
+    right: 40px;
+}
+#favoriteAnn:hover {
+    transition-duration: 0.1s;
+    filter: brightness(110%)
+}
+
+
+                                                                        /* HOMEPAGE */
+
+/* TEXT: I AM A */
+#identifier {
+    color: white; 
+    font-size: 40px; 
+    position: absolute; 
+    top: 230px; 
+    right: 30px; 
+    text-align: center; 
+    width: 100%; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* TEACHER BUTTON */
+#teacher {
+    background-color: yellowgreen;
+    color: white;
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 100px; 
+    position: absolute; 
+    top: 460px; 
+    right: 830px; 
+    height: 180px; 
+    width: 450px; 
+    text-decoration: none; 
+    text-align: center;
+    line-height: 180px;
+}
+#teacher:hover {
+    filter: brightness(110%)
+}
+
+/* STUDENT BUTTON */
+#student {
+    background-color: yellowgreen; 
+    position: absolute; 
+    top: 460px; 
+    right: 190px; 
+    height: 180px; 
+    width: 450px; 
+    font-size: 100px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace;
+    border: none;
+}
+#student:hover {
+    filter: brightness(110%)
+}
+
+
+                                                                        /* AUTHORIZATION PAGE */
+
+/* TEXTAREAS FOR NAME AND SEX INPUT */
+.nameAndSex {
+    position: relative; 
+    right: -10px; 
+    font-size: 30px;
+}
+
+.authorization {
+    color: white; 
+    font-size: 30px; 
+    position: absolute; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* CONFIRM BUTTON */
+#confirm {
+    text-decoration: none; 
+    color: white; 
+    background-color: #093373; 
+    width: 180px; 
+    height: 60px; 
+    position: absolute; 
+    top: 500px; 
+    right: 640px; 
+    font-size: 40px; 
+    border: none; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+#confirm:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+/* CHECKBOX FOR AGREEMENT */
+#agreement {
+    position: absolute; 
+    top: 640px; 
+    right: 1200px; 
+    height: 30px; 
+    width: 30px; 
+    visibility: hidden;
+}
+
+/* AGREEMENT TERMS AND CONDITIONS */
+#terms {
+    font-size: 18px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 625px; 
+    right: 100px; 
+    color: white; 
+    width: 1050px;
+}
+
+/* CONTINUE BUTTON */
+#continueToAnn {
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 40px; 
+    position: absolute; 
+    top: 830px; 
+    right: 170px; 
+    text-decoration: none; 
+    visibility: hidden;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+}
+#continueToAnn:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+                                                                        /* CREATE OR DELETE ANNOUNCEMENTS PAGE */
+
+#create {
+    position: absolute; 
+    top: 400px; 
+    right: 830px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 120px; 
+    height: 180px; 
+    width: 450px; 
+    background-color: lightsalmon; 
+    color: white; 
+    text-align: center; 
+    line-height: 180px; 
+    border-radius: 20px;
+    text-decoration: none;
+}
+#create:hover {
+    filter: brightness(90%);
+    border-style: solid;
+    border-color: black;
+}
+
+#delete {
+    position: absolute; 
+    top: 400px; 
+    right: 190px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 120px; 
+    height: 180px; 
+    width: 450px; 
+    background-color: lightsalmon; 
+    color: white; 
+    text-align: center; 
+    line-height: 180px; 
+    border-radius: 20px;
+    text-decoration: none;
+}
+#delete:hover {
+    filter: brightness(90%);
+    border-style: solid;
+    border-color: black;
+}
+
+                                                                        /* DELETE ANNOUNCEMENTS PAGE */
+
+#searchBtn {
+    height: 56px; 
+    width: 140px; 
+    background-color: lightgray; 
+    position: absolute; 
+    top: 250px; 
+    right: 310px; 
+    border-color: black; 
+    z-index: 997;
+}
+#searchBtn:hover {
+    transition-duration: 0.1s;
+    filter: brightness(70%);
+}
+
+                                                                        /* ANNOUNCEMENT INPUT PAGE */
+
+/* SPAN TEXT OF GRADES */
+#grades {
+    color: white; 
+    position: absolute; 
+    top: 430px; 
+    right: 1100px; 
+    font-size: 40px; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* GRADES CHECKBOX AND LABELS */
+.gradesCheckbox {
+    height: 30px; 
+    width: 30px; 
+    position: absolute; 
+    right: 1048px;
+}
+.gradesLabel {
+    color: white; 
+    position: absolute; 
+    right: 980px; 
+    font-size: 40px; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* LEFT SIDE CLUB CHECKBOXES */
+.leftSideClubCheckbox {
+    width: 30px; 
+    height: 30px; 
+    position: absolute; 
+    right: 980px;
+}
+
+/* RIGHT SIDE CLUB CHECKBOXES */
+.rightSideClubCheckbox {
+    width: 30px; 
+    height: 30px; 
+    position: absolute; 
+    right: 560px;
+}
+
+/* CLUB LABELS */
+.clubLabels {
+    font-size: 40px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* PREVIEW ANNOUNCEMENT BUTTON */
+#previewAnnouncementButton {
+    text-decoration: none; 
+    background-color: #093373; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 40px; 
+    position: absolute; 
+    top: 1630px; 
+    right: 100px; 
+    border: none;
+}
+#previewAnnouncementButton:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+/* CANCEL ANNOUNCEMENT BUTTON */
+#cancelAnnouncement {
+    text-decoration: none; 
+    background-color: #093373; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 40px; 
+    position: absolute; 
+    top: 1630px; 
+    right: 330px;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    text-align: center;
+}
+#cancelAnnouncement:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+
+                                                                        /* PREVIEW PAGE */
+
+/* PREVIEW TEXT SUCH AS "TITLE" AND "GRADE" */
+.previewh2 {
+    font-size: 40px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    right: 1080px;
+}
+
+/* VALUES OF PREVIEW TEXT, SUCH AS THE VALUE OF "TITLE" OR "GRADE" OR "SEX" */
+.previewP {
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute;
+    right: 60px; 
+    font-size: 40px; 
+    height: 100px; 
+    width: 1000px;
+}
+
+/* PREVIEW POST BUTTON */
+#post {
+    font-size: 40px; 
+    color: white; 
+    background-color: #093373; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 790px; 
+    right: 80px; 
+    border: none;
+}
+#post:hover {
+    transition-duration: 0.2s;
+    background-color: yellowgreen;
+}
+
+/* PREVIEW EDIT BUTTON */
+#edit {
+    font-size: 40px; 
+    color: white; 
+    background-color: #093373; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 790px; 
+    right: 280px; 
+    border: none;
+}
+#edit:hover {
+    transition-duration: 0.2s;
+    background-color: yellowgreen;
+}
+
+
+                                                                        /* FINAL POST PAGE */
+
+/* FINAL POST HOME BUTTON */
+#homepageButton {
+    font-size: 50px; 
+    color: violet; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 700px; 
+    right: 1200px; 
+    text-decoration: none;
+    height: 60px;
+    width: 130px;
+    text-align: center;
+}
+#homepageButton:hover {
+    transition-duration: 0.3s;
+    color: white;
+    background-color: violet;
+}
+
+/* CREATE BUTTON */
+#createButton {
+    font-size: 50px; 
+    color: orange; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 700px; 
+    right: 840px; 
+    text-decoration: none;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+}
+#createButton:hover {
+    transition-duration: 0.3s;
+    color: white;
+    background-color: orange;
+}
+
+#deleteFinalPost {
+    font-size: 50px; 
+    position: absolute; 
+    top: 700px; 
+    right: 460px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    color: gold; 
+    text-decoration: none; 
+    height: 60px; 
+    width: 200px; 
+    text-align: center;
+}
+#deleteFinalPost:hover {
+    background-color: gold;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#searchFinalPost {
+    font-size: 50px; 
+    position: absolute; 
+    top: 700px; 
+    right: 120px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    color: yellowgreen; 
+    text-decoration: none; 
+    height: 60px; 
+    width: 200px; 
+    text-align: center;
+}
+#searchFinalPost:hover {
+    background-color: yellowgreen;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#close {
+    font-size: 50px; 
+    color: red; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 420px; 
+    right: 580px; 
+    background-color: #093373; 
+    border: none;
+}
+#close:hover {
+    background-color: yellowgreen;
+    transition-duration: 0.3s;
+}
+
+                                                                        /* FILTER SEARCH PAGE */
+
+/* TITLE TEXT AND INPUT */
+#sTitle {
+    font-size: 30px; 
+    position: relative; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* GRADES CHECKBOX AND LABELS */
+.searchGradesCheckbox {
+    height: 30px; 
+    width: 30px;
+    position: absolute; 
+    right: 1048px;
+}
+.searchGradesLabel {
+    color: white; 
+    position: absolute; 
+    right: 980px; 
+    font-size: 40px; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* THERE SHOULD ALSO BE A #grades 
+ID HERE, HOWEVER IS PLACED IN THE 
+ANNOUNCEMENT INPUT AREA AS THEY BOTH 
+DO THE SAME THING */
+
+/* SPAN TAG FOR "CLUBS" TEXT */
+#clubs {
+    color: white; 
+    position: absolute; 
+    top: 720px; 
+    text-align: center; 
+    width: 100%; 
+    font-size: 40px; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* ALL CHECKBOXES ON LEFT SIDE (FOR NONE, HOSA, CHESS, SAC) */
+.leftSideClubRadioForSearch {
+    width: 30px; 
+    height: 30px; 
+    position: absolute; 
+    right: 980px
+}
+
+/* ALL CHECKBOXES ON RIGHT SIDE (FOR DECA, STEM, FILM, COMPUTER) */
+.rightSideClubRadioForSearch {
+    width: 30px; 
+    height: 30px; 
+    position: absolute;
+    right: 560px;
+}
+
+/* ALL LABELS FOR CLUBS SECTION */
+.searchClubLabel {
+    position: absolute;
+    font-size: 40px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+
+/* SEARCH BUTTON ON FILTER SEARCH PAGE */
+#search {
+    border: none; 
+    background-color: #093373; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    font-size: 40px; 
+    position: absolute; 
+    top: 1200px; 
+    right: 650px; 
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    width: 160px; 
+    text-align: center;
+}
+#search:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+
+                                                                        /* SEARCH ENGINE PAGE */
+
+/* "RESULTS:" TEXT */
+#results {
+    font-size: 40px; 
+    color: white; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    position: absolute; 
+    top: 230px; 
+    right: 1100px;
+    width: 300px;
+}
+
+/* UPDATE SEARCH BUTTON */
+#updateSearch {
+    color: white; 
+    font-size: 40px; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    border: none; 
+    background-color: #093373; 
+    position: absolute; 
+    top: 270px; 
+    right: 40px; 
+    z-index: 998;
+    height: 60px; 
+    line-height: 60px;
+    width: 350px;
+    text-align: center;
+}
+#updateSearch:hover {
+    transition-duration: 0.3s;
+    background-color: yellowgreen;
+}
+
+table {
+    height: fit-content; 
+    font-family: Andale Mono, AndaleMono, monospace; 
+    background-color: white;
+    width: 1200px; 
+    text-align: center;
+    font-size: 45px;
+    border: 20px red;
+    font-weight: bold;
+    /* border-spacing: 0px 2px; */
+}
+
+table button {
+    border: none;
+    font-size: 35px;
+    font-family: Andale Mono, AndaleMono, monospace; 
+    background-color: white;
+}
+table button:hover {
+    /* background-color: greenyellow; */
+    font-size: 40px;
+    font-weight: bold;
+    /* color: red */
+}
+table hr {
+    height: 75px;
+    width: 1200px;
+    background-color: #093373;
+    position: relative;
+    top: 40px;
+}
+table input {
+    position: relative;
+    top: 45px;
+    right: 160px;
+    width: 45px;
+    height: 45px;
+}
+h6 {
+    position: absolute;
+    top: 300px;
+    right: 200px; 
+    font-size: 50px;
+    font-family: Andale Mono, AndaleMono, monospace; 
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* JAVASCRIPT */
+/* for (let ann of final_announcements) {
+    for (let elem of ann) {
+
+        var splittedAtColon = elem.split(":")
+
+        // ANNOUNCEMENT SPLITTED WITH FIRST ELEMENT BEING TITLE, SECOND BEING ARRAY CONTAINING ALL VALUES 
+        var values = splittedAtColon[1].split("][")
+
+        // TITLE OF ANNOUNCEMENT 
+        var newTitle = splittedAtColon[0]
+
+        // VARIABLES USED TO DISPLAY MORE DETAILS OF ANNOUNCEMENT
+        var newGrades = values[0]
+        var newGender = values[1]
+        var newClubs = values[2]
+        var newDetails = values[3]
+
+        // TABLE, ROW, AND CELL CREATED
+        var table = document.getElementById("myTable")
+        var row = table.insertRow()
+        // var cell = row.insertCell()
+
+        // ROW ELEMENTS
+        var myBtn1 = document.createElement("button")
+        var myBtn2 = document.createElement("button")
+        var text = document.createTextNode("Add to Favorites")
+        var buttonText = document.createTextNode("More Details")
+        var titleText = document.createTextNode(newTitle)
+        var line = document.createElement("hr")
+        var p = document.createElement("p")
+        var data = document.createElement("td")
+
+        // TITLE DISPLAYED ON ANNOUNCEMENT
+        row.appendChild(titleText)
+        
+        // ADD TO FAVORITES BUTTON 
+        row.appendChild("td").appendChild("p").appendChild(myBtn1).appendChild(text)
+        myBtn1.style.position = "relative"
+        myBtn1.style.top = "0px"
+        myBtn1.style.left = "-140px"
+
+        // MORE DETAILS BUTTON
+        row.appendChild(myBtn2).appendChild(buttonText)
+        myBtn2.style.position = "relative"
+        myBtn2.style.top = "0px"
+        myBtn2.style.left = "-140px"
+
+
+        myBtn2.onclick = function() {
+            alert(
+                newTitle + "\n" + "Grades: " + newGrades + "\n" + "Gender: " + newGender + "\n" + "Clubs: " + newClubs + "\n" + "Details: " + newDetails
+            )
+        }
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+tr {
+    padding-top: 50px;
+    height: 300px; 
+    position: relative;
+    bottom: 0px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Andale Mono, AndaleMono, monospace;
+}
+#myTable tbody tr text {
+    
+}
+button {
+    font-size: 35px;
+    background-color: white;
+    border: none;
+    height: 70px;
+    font-family: Andale Mono, AndaleMono, monospace; 
+    background-color: lawngreen;
+    width: 400px;
+}
+
+button:hover {
+    background-color: greenyellow;
+    color: #093373;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}  */

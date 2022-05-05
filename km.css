@@ -1,0 +1,221 @@
+                                                                                                                        /* ALL PAGES */
+
+
+
+
+#kmHeader {
+    background-color: #031467; 
+    z-index: 999; 
+    height: 100px; 
+    width: 100%;
+    position: fixed; 
+    top: 0px; 
+    left: 0px;
+}
+
+#kmIdeas {
+    font-size: 26px; position: absolute; top: 25px; left: 250px; color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none; z-index: 999;
+}
+#kmIdeas:hover {
+    color: grey
+}
+
+#kmGames {
+    font-size: 26px; position: absolute; top: 25px; left: 650px; color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none; z-index: 999;
+}
+#kmGames:hover {
+    color: grey
+}
+
+#kmMore {
+    font-size: 26px; position: absolute; top: 25px; left: 1050px; color: white; font-family: Arial, Helvetica, sans-serif; text-decoration: none; z-index: 999;
+}
+#kmMore:hover {
+    color: grey
+}
+
+#logo {
+    font-size: 60px; font-family: Arial, Helvetica, sans-serif; color: #03fcba; position: absolute; top: 20px; left: 60px; text-decoration: none; z-index: 999;
+}
+
+#small {
+    width: 40px; height: 5px; background-color: #03fcba; position: absolute; top: 50px; left: 10px; border: none; border-radius: 3px;
+}
+
+#big {
+    width: 1270px; height: 5px; background-color: #03fcba; position: absolute; top: 50px; left: 160px; border: none; border-radius: 3px;
+}
+
+
+
+
+
+                                                                                                                        /* ADD AND SEARCH BUTTONS ON MULTIPLE PAGES */
+
+
+
+
+
+#addButton {
+    background-color: orange; color: white; font-size: 40px; position: absolute; top: 120px; left: 30px; height: 50px; width: 120px; text-align: center; line-height: 50px; border-radius: 5px; text-decoration: none;
+}
+#addButton:hover {
+    filter: brightness(80%);
+}
+
+#searchButton {
+    background-color: orange; color: white; font-size: 40px; position: absolute; top: 120px; left: 180px; height: 50px; width: 130px; text-align: center; line-height: 50px; border-radius: 5px; text-decoration: none;
+}
+#searchButton:hover {
+    filter: brightness(80%);
+}
+
+
+
+
+
+                                                                                                                        /* ADD IDEAS PAGE */
+
+
+
+
+
+#publish {
+    height: 50px; width: 200px; font-size: 40px; color: white; position: absolute; top: 1100px; right: 100px; background-color: orange; border-radius: 5px; border: none; text-decoration: none; text-align: center; line-height: 50px;
+}
+#publish:hover {
+    filter: brightness(80%);
+}
+
+
+
+
+
+                                                                                                                        /* SEARCH IDEAS PAGE */
+
+
+
+
+
+/* "SEARCH IDEAS" TEXT */
+#searchIdeasText {
+    color: white; font-size: 60px; position: absolute; top: 50px; right: 600px;
+}
+
+/* SEARCH IDEAS BUTTON */
+input.searchInput:focus {
+    outline: none;
+}
+
+#searchIdeasButton {
+    height: 48px; width: 140px; background-color: lightgrey; position: absolute; top: 239px; right: 390px; border-color: black;
+}
+#searchIdeasButton:hover {
+    filter: brightness(80%);
+}
+
+/* SEARCH RESULTS TABLE */
+#resultsTable {
+    background-color: #c8cccc; position: absolute; top: 400px; left: 0px; width: 700px;
+}
+#resultsTable tr {
+    height: 200px; 
+}
+
+/* DISPLAY IDEA DIV */
+#displayIdea {
+    height: 720px; width: 800px; background-color: white; visibility: hidden;
+}
+
+#ideaTitleText {
+    position: absolute; top: 0px; right: 60px; font-size: 50px; color: #636965; width: 700px; text-align: center; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaIndustryText {
+    position: absolute; top: 150px; right: 620px; font-size: 30px; color: #636965; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaIndustry {
+    position: absolute; top: 150px; right: 100px; font-size: 30px; color: #636965; height: 100px; width: 500px; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaImpactText {
+    position: absolute; top: 250px; right: 533px; font-size: 30px; color: #636965; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaImpact {
+    position: absolute; top: 265px; right: 20px; font-size: 20px; color: #636965; height: 100px; width: 500px; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaDetailsText {
+    position: absolute; top: 350px; right: 300px; font-size: 35px; color: #636965; font-family: 'Times New Roman', Times, serif;
+}
+
+#ideaDetails {
+    position: absolute; top: 420px; right: 50px; font-size: 18px; color: #444745; height: 230px; width: 700px; font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* HIDDEN FORM BEHIND DISPLAY IDEA THING */
+#hiddenForm {
+    height: 720px; width: 800px; background-color: white; visibility: hidden;
+}
+
+#hiddenIdeaTitleText {
+    position: absolute; top: 50px; right: 60px; font-size: 50px; color: #636965; width: 700px; text-align: center; font-family: 'Times New Roman', Times, serif; font-weight: bold;
+}
+
+
+/* EDIT AND SAVE BUTTONS */
+#editButton {
+    position: absolute; top: 10px; left: 10px; background-color: orange; color: white; border-radius: 5px; height: 30px; width: 75px; border: none; font-size: 20px;
+}
+#editButton:hover {
+    filter: brightness(80%);
+}
+#saveButton {
+    position: absolute; top: 10px; left: 10px; background-color: orange; color: white; border-radius: 5px; height: 30px; width: 75px; border: none; font-size: 20px;
+}
+#saveButton:hover {
+    filter: brightness(80%);
+}
+
+
+
+
+
+                                                                                                                        /* PUBLISHED PAGE */
+
+
+
+
+#publishedAddButton {
+    height: 80px; width: 170px; color: white; font-size: 70px; position: absolute; top: 300px; right: 800px; background-color: orange; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 80px;
+}
+#publishedAddButton:hover {
+    filter: brightness(80%);
+}
+
+#publishedSearchButton {
+    height: 80px; width: 250px; color: white; font-size: 70px; position: absolute; top: 300px; right: 450px; background-color: orange; border: none; border-radius: 5px; text-decoration: none; text-align: center; line-height: 80px;
+}
+#publishedSearchButton:hover {
+    filter: brightness(80%);
+}
+
+
+
+
+#guessPage {
+    position: absolute; top: 300px; right: 800px; background-color: orange; color: white; text-decoration: none; font-size: 80px; height: 80px; width: 250px; border: none; border-radius: 5px; text-align: center; line-height: 80px;
+}
+#guessPage:hover {
+    filter: brightness(80%);
+}
+
+#convertPage {
+    position: absolute; top: 300px; right: 300px; background-color: orange; color: white; text-decoration: none; font-size: 80px; height: 80px; width: 300px; border: none; border-radius: 5px; text-align: center; line-height: 80px;
+}
+#convertPage:hover {
+    filter: brightness(80%);
+}

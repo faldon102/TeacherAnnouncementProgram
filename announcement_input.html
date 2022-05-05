@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher Announcements Page</title>
+        <script src="teacher.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background-color: #093373; min-height: 2600px; position: relative;" onload="deleteButtonOnCreatePage(); kmLogo()" onscroll="line()">
+        <div class="header">
+            <b style="font-weight: 170px; font-size: 60px;">Teacher Announcements Creator</b>
+            <marquee direction="left" height="100px" width="900px" style="position: absolute; top: 170px; right: 300px; color: red; font-size: 20px;" scrollamount="15">COVID-19 alert: Please wear a mask when outside of your home. Follow all safety guidelines put in place by your state government. Prevent the spread of COVID-19. STAY HOME, STAY SAFE, SAVE LIVES.             To learn more about COVID-19 and related information in Canada, visit Canada's website or <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">CLICK HERE</a>!</marquee>
+        </div>
+
+        <hr id="headerLine">
+
+        <!-- LOGO -->
+        <a href="./homepage.html">
+            <img src="./logo.png" id="northParkLogo">
+        </a>
+
+        <!-- THE FORM CONTAINING ALL TITLES, CHECKBOXES, DROPDOWN MENUS, AND TEXTAREAS -->
+        <div id="allAnnInputs">
+
+            <!-- ANNOUNCEMENT TITLE -->
+            <div style="font-size: 40px; color: white; position: absolute; top: 300px; right: 500px; font-family: Andale Mono, AndaleMono, monospace;">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" value="" style="font-size: 30px; position: relative; font-family: Andale Mono, AndaleMono, monospace;" maxlength="40" required>
+            </div>
+
+            <!-- GRADE(S) CHECKBOXES -->
+            <span id="grades">Grade(s)</span>
+            
+            <input type="checkbox" name="grade" id="grade9" class="gradesCheckbox" style="top: 430px;">
+            <label for="grade9" class="gradesLabel" style="top: 430px;">9</label>
+
+            <input type="checkbox" name="grade" id="grade10" class="gradesCheckbox" style="top: 490px;">
+            <label for="grade10" class="gradesLabel" style="top: 490px;">10</label>
+
+            <input type="checkbox" name="grade" id="grade11" class="gradesCheckbox" style="top: 550px;">
+            <label for="grade11" class="gradesLabel" style="top: 550px;">11</label>
+
+            <input type="checkbox" name="grade" id="grade12" class="gradesCheckbox" style="top: 610px;">
+            <label for="grade12" class="gradesLabel" style="top: 610px;">12</label>
+
+            <!-- GENDER DROPDOWN MENU -->
+            <label for="inpSex" style="color: white; position: absolute; top: 430px; right: 500px; font-size: 40px; font-family: Andale Mono, AndaleMono, monospace;">Sex</label>
+            <input id="inpSex" list="the_gender" type="text" name="inpSex" style="font-size: 40px; position: absolute; top: 430px; right: 250px; width: 200px;">
+            <datalist id="the_gender" multiple>
+                <option value="Male">
+                <option value="Female">
+                <option value="Other">
+                <option value="All">
+            </datalist>
+
+            <!-- CLUBS RADIO BUTTONS -->
+            <span id="clubs">Clubs</span>
+
+            <!-- NONE -->
+            <input type="radio" id="none" style="top: 790px;" name="annClubs" class="leftSideClubCheckbox">
+            <label for="none" style="position: absolute; top: 786px; right: 870px;" class="clubLabels">NONE</label>
+
+            <!-- HOSA -->
+            <input type="radio" id="hosa" style="top: 870px;" name="annClubs" class="leftSideClubCheckbox">
+            <label for="hosa" style="position: absolute; top: 870px; right: 870px;" class="clubLabels">HOSA</label>
+
+            <!-- CHESS -->
+            <input type="radio" id="chess" style="top: 950px;" name="annClubs" class="leftSideClubCheckbox">
+            <label for="chess" style="position: absolute; top: 950px; right: 846px;" class="clubLabels">CHESS</label>
+
+            <!-- SAC -->
+            <input type="radio" id="sac" style="top: 1030px;" name="annClubs" class="leftSideClubCheckbox">
+            <label for="sac" style="position: absolute; top: 1030px; right: 895px;" class="clubLabels">SAC</label>
+
+            <!-- DECA -->
+            <input type="radio" id="deca" style="top: 790px;" name="annClubs" class="rightSideClubCheckbox">
+            <label for="deca" style="position: absolute; top: 786px; right: 450px;" class="clubLabels">DECA</label>
+
+            <!-- STEM -->
+            <input type="radio" id="stem" style="top: 870px;" name="annClubs" class="rightSideClubCheckbox">
+            <label for="stem" style="position: absolute; top: 866px; right: 450px;" class="clubLabels">STEM</label>
+
+            <!-- FILM -->
+            <input type="radio" id="film" style="top: 950px;" name="annClubs" class="rightSideClubCheckbox">
+            <label for="film" style="position: absolute; top: 946px; right: 450px;" class="clubLabels">FILM</label>
+
+            <!-- COMPUTER -->
+            <input type="radio" id="computer" style="top: 1030px;" name="annClubs" class="rightSideClubCheckbox">
+            <label for="computer" style="position: absolute; top: 1026px; right: 352px;" class="clubLabels">COMPUTER</label>
+
+            <!-- ANNOUNCEMENT DETAILS TEXTAREA -->
+            <label for="details" style="position: absolute; top: 1200px; width: 100%; text-align: center; font-size: 40px; color: white; font-family: Andale Mono, AndaleMono, monospace;">Announcement Details</label>
+            <p style="position: absolute; top: 1230px; width: 100%; text-align: center; font-size: 20px; color: white; font-family: Andale Mono, AndaleMono, monospace;">Please do not repeat details inputted above</p>
+            <textarea value="Type" id="details" cols="40" rows="5" style="font-size: 40px; font-family: Andale Mono, AndaleMono, monospace; position: absolute; top: 1300px; right: 240px;"></textarea>
+
+            <!-- PREVIEW AND CANCEL BUTTONS -->
+            <button id="previewAnnouncementButton" onclick="preview()">Preview</button>
+            <a href="./homepage.html" id="cancelAnnouncement">Cancel</a>
+
+        </div>
+
+        <a href="delete.html" style="position: absolute; bottom: 680px; right: 70px; height: 100px; width: 630px; background-color: #093373; font-family: Andale Mono, AndaleMono, monospace; font-size: 50px; text-decoration: none; color: white;" id="deleteButtonOnCreatePage">Delete Announcements</a>
+        <img src="./7-removebg-preview.png" style="visibility: hidden; height: 35px; width: 50px;" id="arrowInput">
+
+        <div id="preview" style="display: none; height: 1000px;">
+
+            <!-- ALL SECTIONS FOR PREVIEW ARE AS FOLLOWING -->
+            <!-- TITLE PREVIEW -->
+            <h2 style="top: 230px;" class="previewh2">Title: </h2>
+            <p class="previewP" id="previewTitleInput" style="top: 225px;"></p>
+
+            <!-- GRADE(S) PREVIEW -->
+            <h2 style="top: 330px;" class="previewh2">Grade(s): </h2>
+            <p class="previewP" style="top: 325px;" id="previewGradesInput"></p>
+
+            <!-- SEX PREVIEW -->
+            <h2 style="top: 430px;" class="previewh2">Sex: </h2>
+            <p class="previewP" style="top: 425px;" id="previewSexInput"></p>
+
+            <!-- CLUBS PREVIEW -->
+            <h2 style="top: 530px;" class="previewh2">Clubs: </h2>
+            <p class="previewP" style="top: 525px;" id="previewClubsInput"></p>
+
+            <!-- ANNOUNCEMENT DETAILS -->
+            <h2 style="top: 630px;" class="previewh2">Details: </h2>
+            <p class="previewP" style="top: 625px;" id="previewDetailsInput"></p>
+
+            <!-- BUTTONS ON BOTTOM OF PAGE -->
+            <a>
+                <button id="edit" onclick="edit()">Edit</button>
+            </a>
+
+            <a href="./final_post.html">
+                <button id="post" onclick="post()">Post</button>
+            </a>
+
+        </div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <!-- CONTACTS -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 560px; left: 200px;">Phone: 647 - 416 - 7410</h2>
+            <h2 class="h2Footer" style="position: absolute; bottom: 510px; left: 200px;">Email: ann.program@gmail.com</h2>
+            
+            <hr id="shorterLineFooter">
+            
+            <!-- FEEDBACK SECTION -->
+            <form action="mailto: 861762@pdsb.net" method="POST">
+                <h1 class="h1Footer" style="position: absolute; bottom: 360px; left: 200px;">Feedback</h1>
+                <textarea id="feedbackTextarea" name="feedback" cols="30" rows="8"></textarea>
+                <button id="feedbackSendBtn">Send</button>
+            </form>
+            
+            <!-- ABOUT US -->
+            <div id="aboutUs">
+                <h1 class="h1Footer" style="position: absolute; bottom: 550px; right: 450px;">About Us</h1>
+                <p class="pFooter" style="position: absolute; bottom: 330px; right: 120px; width: 500px; height: 200px;">Founded in May of 2021, we, Announcements Co., provide a variety of services to our clients. Our flagship software products are the “Teacher Announcement Program,” enabling all teachers of North Park Secondary School to upload school announcements, and the “School Search Program,” enabling students to view all uploaded announcements, and schedule accordingly.</p>
+                <hr id="longerLineFooter">
+            </div>
+            
+            <!-- SOCIAL MEDIA LOGOS AND LINKS -->
+            <h1 class="h1Footer" style="position: absolute; bottom: 160px; right: 435px;">Follow Us</h1>
+            <a href="https://www.instagram.com/explore/locations/511992834/north-park-secondary-school/?hl=en">
+                <img class="instagramLogoFooter" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+            </a>
+
+            <a href="https://twitter.com/northparkssca?lang=en">
+                <img class="twitterLogoFooter" src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png">
+            </a>
+
+            <a href="https://m.facebook.com/profile.php?id=106176169421629">
+                <img class="facebookLogoFooter" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png">
+            </a>
+
+            <a href="https://ca.linkedin.com/company/north-park-secondary-school">
+                <img class="linkedInLogoFooter" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png">
+            </a>
+
+            <!-- COPYRIGHT SECTION -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 20px; left: 60px;">Copyright © 2021 Krish Mehta. All rights reserved.</h2>
+        
+            <a href="./ideas.html" id="logoTextInFooter">KM</a>
+            <hr id="smallLogoLineInFooter">
+            <hr id="largeLogoLineInFooter">
+            
+        </div>
+
+    </body>
+</html>
+
+
+
+

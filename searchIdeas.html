@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ideas</title>
+    <link rel="stylesheet" href="km.css">
+    <script src="km.js"></script>
+</head>
+<body style="background-color: #031467;" onload="changeColor(); position();" onscroll="position();">
+    <div id="kmHeader">
+        <a id="logo" href="./km.html">KM</a>
+        <hr id="small">
+        <hr id="big">
+        
+        <a id="kmIdeas" href="./ideas.html">IDEAS</a>
+        <a id="kmGames" href="./games.html">GAMES</a>
+        <a id="kmMore" href="./homepage.html">MORE PROGRAMS</a>
+    </div>
+
+    <a id="addButton" href="./add.html">Add</a>
+
+    <p id="searchIdeasText">Search Ideas</p>
+
+    <input type="text" id="searchInputId" class="searchInput" style="height: 40px; width: 530px; font-family: monospace; position: absolute; top: 240px; right: 530px; font-size: 40px;">
+    <img src="./mag-removebg-preview copy.png" style="height: 40px; width: 40px; position: absolute; top: 244px; right: 442px; z-index: 998;">
+    <button id="searchIdeasButton" onclick="getIdeas()"></button>
+    
+    <table id="resultsTable">
+        
+    </table>
+
+    <div id="displayIdea">
+
+        <button id="editButton" onclick="edit()">Edit</button>
+
+        <!-- POSITION  OF ALL ELEMENTS INSIDE DIV MUST BE ABSOLUTE -->
+        <p id="ideaTitleText"><b></b></p>
+
+        <p id="ideaIndustryText">Industry: </p>
+        <p id="ideaIndustry"></p>
+
+        <p id="ideaImpactText">Societal Impact: </p>
+        <p id="ideaImpact"></p>
+
+        <p id="ideaDetailsText">More Details</p>
+        <p id="ideaDetails"></p>
+
+
+        <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  -->
+    </div>
+
+    <div id="hiddenForm">
+
+        <button id="saveButton" onclick="save()">Save</button>
+
+        <input id="hiddenIdeaTitleText">
+
+        <label for="hiddenIdeaIndustry" style="position: absolute; top: 150px; right: 620px; font-size: 30px; color: #636965; font-family: 'Times New Roman', Times, serif;">Industry:</label>
+        <input id="hiddenIdeaIndustry" list="hiddenIdeaIndustryList" style="position: absolute; top: 150px; right: 100px; font-size: 30px; color: #636965; height: 50px; width: 500px; font-family: 'Times New Roman', Times, serif;">
+        <datalist id="hiddenIdeaIndustryList">
+            <option value="Agriculture"></option>
+            <option value="Healthcare"></option>
+            <option value="Automotive"></option>
+            <option value="Beauty and Makeup"></option>
+            <option value="Artificial Intelligence"></option>
+        </datalist>
+
+        <label for="hiddenIdeaImpact" style="position: absolute; top: 240px; right: 533px; font-size: 30px; color: #636965; font-family: 'Times New Roman', Times, serif;">Societal Impact:</label>
+        <textarea id="hiddenIdeaImpact" style="position: absolute; top: 250px; right: 20px; font-size: 20px; color: #636965; height: 60px; width: 500px; font-family: 'Times New Roman', Times, serif;"></textarea>
+
+        <label for="hiddenIdeaDetails" style="position: absolute; top: 350px; right: 300px; font-size: 35px; color: #636965; font-family: 'Times New Roman', Times, serif;">More Details</label>
+        <textarea id="hiddenIdeaDetails" style="position: absolute; top: 420px; right: 50px; font-size: 18px; color: #444745; height: 230px; width: 700px; font-family: 'Times New Roman', Times, serif;"></textarea>
+    </div>
+    
+    <div id="kmFooter"></div>
+</body>
+</html>

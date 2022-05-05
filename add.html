@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Ideas</title>
+    <link rel="stylesheet" href="km.css">
+    <script src="km.js"></script>
+</head>
+<body style="background-color: #031467; min-height: 2000px;" onload="changeColor()">
+    <div id="kmHeader">
+        <a id="logo" href="./km.html">KM</a>
+        <hr id="small">
+        <hr id="big">
+        
+        <a id="kmIdeas" href="./ideas.html">IDEAS</a>
+        <a id="kmGames" href="./games.html">GAMES</a>
+        <a id="kmMore" href="./homepage.html">MORE PROGRAMS</a>
+    </div>
+
+    <a id="addButton" href="./add.html">Add</a>
+    <a id="searchButton" href="./searchIdeas.html">Search</a>
+
+    <h1 style="color: white; font-size: 90px; position: absolute; top: 60px; right: 500px;">Add Ideas!</h1>
+
+    <div id="form">
+        <label for="ideaTitle" style="font-size: 45px; color: white; position: absolute; top: 350px; left: 100px;">Title: </label>
+        <input id="ideaTitle" type="text" style="height: 40px; width: 400px; font-size: 38px; position: absolute; top: 350px; left: 220px; font-family: monospace;">
+
+        <label for="industry" style="font-size: 45px; position: absolute; top: 350px; right: 530px; color: white;">Industry: </label>
+        <input id="industry" list="industryData" style="font-size: 35px; height: 40px; width: 400px; position: absolute; top: 350px; right: 90px; font-family: monospace;">
+        <datalist id="industryData">
+            <option value="Agriculture"></option>
+            <option value="Healthcare"></option>
+            <option value="Automotive"></option>
+            <option value="Beauty and Makeup"></option>
+            <option value="Artificial Intelligence"></option>
+        </datalist>
+
+        <label for="impact" style="font-size: 40px; position: absolute; top: 500px; right: 850px; color: white;">Societal Impact: </label>
+        <textarea type="text" id="impact" style="font-size: 35px; height: 80px; width: 600px; position: absolute; top: 500px; right: 200px;"></textarea>
+
+        <label for="ideaDetails" style="font-size: 40px; position: absolute; top: 720px; color: white; width: 100%; text-align: center;">More Details</label>
+        <textarea id="ideaDetails" style="font-size: 35px; height: 240px; width: 1000px; position: absolute; top: 800px; right: 230px; font-family: monospace;"></textarea>
+    </div>
+
+    <a id="publish" onclick="publish()" href="./published.html">Publish</a>
+
+    <div id="kmFooter"></div>
+</body>
+</html>

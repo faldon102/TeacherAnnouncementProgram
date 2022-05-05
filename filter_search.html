@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Announcements</title>
+        <script src="student.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background-color: #093373; width: 100%; min-height: 2380px; position: relative;" onscroll="line()" onload="kmLogo()">
+        <div class="header">
+            <b style="font-weight: 170px; font-size: 80px;">Search Announcements</b>
+            <marquee direction="left" height="100px" width="950px" style="position: absolute; top: 170px; right: 300px; color: red; font-size: 20px;" scrollamount="15">COVID-19 alert: Please wear a mask when outside of your home. Follow all safety guidelines put in place by your state government. Prevent the spread of COVID-19. STAY HOME, STAY SAFE, SAVE LIVES.             To learn more about COVID-19 and related information in Canada, visit Canada's website or <a href="https://www.canada.ca/en/public-health/services/diseases/coronavirus-disease-covid-19.html">CLICK HERE</a>!</marquee>
+        </div>
+        <hr id="headerLine">
+
+        <!-- LOGO AND FAVORITES IMAGE BUTTONS -->
+        <a href="./homepage.html">
+            <img src="./logo.png" id="northParkLogo">
+        </a>
+        <a href="./favorites.html">
+            <img src="https://icon-library.com/images/favorite-icon/favorite-icon-14.jpg" id="favoriteAnn">
+        </a>
+        
+        <!-- FORM CONTAINING THE CHOOSING OPTION FOR STUDENT, OF THE TITLE, GRADES, GENDERS AND CLUBS -->
+        <form action="" method="">
+
+            <!-- CHOOSING TITLE OF ANNOUNCEMENT -->
+            <div style="font-size: 40px; color: white; position: absolute; top: 300px; right: 500px; font-family: Andale Mono, AndaleMono, monospace;">
+                <label for="sTitle">Title</label>
+                <input type="text" id="sTitle" name="sTitle">
+            </div>
+
+            <!-- CHOOSING GRADES -->
+            <span id="grades">Grade(s)</span>
+
+            <input type="checkbox" name="sGrade" id="sGrade9" class="searchGradesCheckbox" style="top: 430px;">
+            <label id="sGrade9" class="searchGradesLabel" style="top: 430px;">9</label>
+
+            <input type="checkbox" name="sGrade" id="sGrade10" class="searchGradesCheckbox" style="top: 490px;">
+            <label id="sGrade10" class="searchGradesLabel" style="top: 490px;">10</label>
+
+            <input type="checkbox" name="sGrade" id="sGrade11" class="searchGradesCheckbox" style="top: 550px;">
+            <label id="sGrade11" class="searchGradesLabel" style="top: 550px;">11</label>
+
+            <input type="checkbox" name="sGrade" id="sGrade12" class="searchGradesCheckbox" style="top: 610px;">
+            <label id="sGrade12" class="searchGradesLabel" style="top: 610px;">12</label>
+
+            <!-- CHOOSING GENDER -->
+            <div id="search_genders">
+                <label for="sSex" style="color: white; position: absolute; top: 430px; right: 500px; font-size: 40px; font-family: Andale Mono, AndaleMono, monospace;">Sex</label>
+                <input id="sSex" list="sTheGender" type="text" name="sSex" style="font-size: 40px; position: absolute; top: 430px; right: 250px; width: 200px;">
+                <datalist id="sTheGender">
+                    <option value="Male">
+                    <option value="Female">
+                    <option value="Other">
+                    <option value="All">
+                </datalist>
+            </div>
+
+            <!-- CHOOSING CLUBS -->
+            <div id="searchClubs">
+                <span id="clubs">Clubs</span>
+
+                <!-- NONE -->
+                <input type="radio" id="sNone" class="leftSideClubRadioForSearch" style="top: 790px;;" name="sClubs">
+                <label for="sNone" class="searchClubLabel" style="top: 786px; right: 870px;">NONE</label>
+
+                <!-- HOSA -->
+                <input type="radio" id="sHosa" class="leftSideClubRadioForSearch" style="top: 870px;" name="sClubs">
+                <label for="sHosa" class="searchClubLabel" style="top: 870px; right: 870px;">HOSA</label>
+
+                <!-- CHESS -->
+                <input type="radio" id="sChess" class="leftSideClubRadioForSearch" style="top: 950px;" name="sClubs">
+                <label for="sChess" class="searchClubLabel" style="top: 950px; right: 846px;">CHESS</label>
+
+                <!-- SAC -->
+                <input type="radio" id="sSac" class="leftSideClubRadioForSearch" style="top: 1030px;" name="sClubs">
+                <label for="sSac" class="searchClubLabel" style="top: 1030px; right: 895px;">SAC</label>
+
+                <!-- DECA -->
+                <input type="radio" id="sDeca" class="rightSideClubRadioForSearch" style="top: 790px;" name="sClubs">
+                <label for="sDeca" class="searchClubLabel" style="top: 786px; right: 450px;">DECA</label>
+
+                <!-- STEM -->
+                <input type="radio" id="sStem" class="rightSideClubRadioForSearch" style="top: 870px;" name="sClubs">
+                <label for="sStem" class="searchClubLabel" style="top: 866px; right: 450px;">STEM</label>
+
+                <!-- FILM -->
+                <input type="radio" id="sFilm" class="rightSideClubRadioForSearch" style="top: 950px;" name="sClubs">
+                <label for="sFilm" class="searchClubLabel" style="top: 946px; right: 450px;">FILM</label>
+
+                <!-- COMPUTER -->
+                <input type="radio" id="sComputer" class="rightSideClubRadioForSearch" style="top: 1030px;" name="sClubs">
+                <label for="sComputer" class="searchClubLabel" style="top: 1026px; right: 352px;">COMPUTER</label>
+    
+
+            <!-- SEARCH BUTTON -->
+            <a id="search" onclick="getInput()" href="./search_engine.html">SEARCH</a>
+            </div>
+        </form>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            
+            <!-- CONTACTS -->
+            <div>
+                <h2 class="h2Footer" style="position: absolute; bottom: 560px; left: 200px;">Phone: 647 - 416 - 7410</h2>
+                <h2 class="h2Footer" style="position: absolute; bottom: 510px; left: 200px;">Email: ann.program@gmail.com</h2>
+            </div>
+            
+            <hr id="shorterLineFooter">
+            
+            <!-- FEEDBACK SECTION -->
+            <form action="mailto: 861762@pdsb.net" method="POST">
+                <h1 class="h1Footer" style="position: absolute; bottom: 360px; left: 200px;">Feedback</h1>
+                <textarea id="feedbackTextarea" name="feedback" cols="30" rows="8"></textarea>
+                <button id="feedbackSendBtn">Send</button>
+            </form>
+            
+            <!-- ABOUT US -->
+            <div id="aboutUs">
+                <h1 class="h1Footer" style="position: absolute; bottom: 550px; right: 450px;">About Us</h1>
+                <p class="pFooter" style="position: absolute; bottom: 330px; right: 120px; width: 500px; height: 200px;">Founded in May of 2021, we, Announcements Co., provide a variety of services to our clients. 
+                    Our flagship software products are the “Teacher Announcement Program,” enabling all teachers of North Park Secondary School to upload school announcements, and the “School Search Program,” enabling
+                    students to view all uploaded announcements, and schedule accordingly.</p>
+                <hr id="longerLineFooter">
+            </div>
+            
+            <!-- SOCIAL MEDIA LOGOS AND LINKS -->
+            <h1 class="h1Footer" style="position: absolute; bottom: 160px; right: 435px;">Follow Us</h1>
+            <a href="https://www.instagram.com/explore/locations/511992834/north-park-secondary-school/?hl=en">
+                <img class="instagramLogoFooter" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+            </a>
+
+            <a href="https://twitter.com/northparkssca?lang=en">
+                <img class="twitterLogoFooter" src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png">
+            </a>
+
+            <a href="https://m.facebook.com/profile.php?id=106176169421629">
+                <img class="facebookLogoFooter" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png">
+            </a>
+
+            <a href="https://ca.linkedin.com/company/north-park-secondary-school">
+                <img class="linkedInLogoFooter" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png">
+            </a>
+
+            <!-- COPYRIGHT SECTION -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 20px; left: 60px;">Copyright © 2021 Krish Mehta. All rights reserved.</h2>
+        
+            <a href="./ideas.html" id="logoTextInFooter">KM</a>
+            <hr id="smallLogoLineInFooter">
+            <hr id="largeLogoLineInFooter">
+            
+        </div>
+        
+    </body>
+</html>

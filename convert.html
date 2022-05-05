@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Convert</title>
+        <script src="convertfuncs.js"></script>
+        <link rel="stylesheet" href="convert.css">
+    </head>
+    
+    <body style="background-color: teal; min-height: 2000px;">
+        <div id="convertHeader">
+            <h1 id="convertHeaderText">Conversion</h1>
+        </div>
+
+        <h2 id="chooseText">Choose Your Conversion</h2>
+        <input id="firstPickInp" list="firstPick">
+        <datalist id="firstPick">
+            <option value="Decimal">
+            <option value="Binary">
+            <option value="Hexadecimal">
+        </datalist>
+
+        <h2 id="to">To</h2>
+
+        <input id="secondPickInp" list="secondPick">
+        <datalist id="secondPick">
+            <option value="Decimal">
+            <option value="Binary">
+            <option value="Hexadecimal">
+        </datalist>
+
+        <label for="enterVal" style="color: white; position: absolute; top: 500px; right: 1080px; font-size: 30px;">Enter Value: </label>
+        <input id="enterVal" type="text" style="position: absolute; top: 500px; right: 350px; width: 700px; height: 30px; font-size: 30px;">
+        <button id="convert" onclick="convertIt()">Convert</button>
+
+        <h2 id="answer"></h2>
+
+    </body>
+</html>

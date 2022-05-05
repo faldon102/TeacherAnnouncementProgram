@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="guess.js"></script>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body style="background-color: lightseagreen;" onload="localStorage.removeItem('guesses'); localStorage.removeItem('guessNums')">
+    <div id="header">
+        <h1 id="headerText">Guess My Number</h1>
+    </div>
+
+    <h2 id="enterRange" style="position: absolute; top: 170px; width: 100%; text-align: center; color: white; font-size: 40px;">Enter A Range</h2>
+    <select id="1" style="height: 45px; width: 60px; background-color: white; color: black; font-size: 35px; position: absolute; top: 290px; right: 850px;">
+        <option value="1">0</option>
+    </select>
+    <p id="to" style="color: white; font-size: 60px; position: absolute; top: 220px; width: 100%; text-align: center;">To</p>
+    <input type="text" id="range" style="height: 40px; width: 160px; position: absolute; top: 290px; right: 430px; font-size: 30px;">
+    <button id="confirm" onclick="calcMinGuesses()">Confirm</button>
+    <button id="restart" onclick="location.reload()">Restart</button>
+
+    <p id="bet" style="color: white; font-size: 35px; position: absolute; top: 370px; right: 200px; height: 200px; width: 1000px; text-align: center; visibility: hidden;"></p>
+    <a href="./guess.html" id="yes" onclick="locate()">Yes</a> 
+    <button id="no" onclick="cancel()">No</button>
+
+    <table id="guessTable" style="position: absolute; top: 620px; right: 0px; width: 100%; background-color: lightseagreen; visibility: hidden;"></table>
+
+    <div id="guessFooter"></div>
+    
+</body>
+</html>

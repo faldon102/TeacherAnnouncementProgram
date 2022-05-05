@@ -1,0 +1,77 @@
+#convert {
+    position: absolute; 
+    top: 500px; 
+    right: 200px; 
+    font-size: 30px; 
+    color: white; 
+    background-color: purple; 
+    border: none;
+}
+
+#convert:hover {
+    filter: brightness(50%);
+}
+
+#convertHeader {
+    height: 200px; 
+    background-color: aqua; 
+    position: fixed; 
+    top: 0px; 
+    left: -20px; 
+    width: 1700px; 
+    z-index: 999;
+}
+
+#convertHeaderText {
+    position: absolute; 
+    top: -20px; 
+    right: 700px; 
+    font-size: 100px; 
+    color: blueviolet;
+}
+
+#chooseText {
+    position: absolute; 
+    top: 200px; 
+    right: 400px; 
+    font-size: 60px; 
+    color: white;
+}
+
+#firstPickInp {
+    height: 30px; 
+    width: 200px; 
+    font-size: 25px; 
+    position: absolute; 
+    top: 370px; 
+    right: 900px; 
+    color: black;
+}
+
+#to {
+    font-size: 40px; 
+    color: white; 
+    position: absolute; 
+    top: 335px; 
+    right: 730px;
+}
+
+#secondPickInp {
+    height: 30px; 
+    width: 200px; 
+    font-size: 25px; 
+    position: absolute; 
+    top: 370px; 
+    right: 400px; 
+    color: black;
+}
+
+#answer {
+    position: absolute; 
+    top: 600px; 
+    width: 100%; 
+    text-align: center; 
+    height: 30px; 
+    font-size: 50px; 
+    color: white;
+}

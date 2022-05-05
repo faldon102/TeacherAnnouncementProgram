@@ -1,0 +1,133 @@
+#header {
+    height: 150px; width: 1500px; background-color: lightblue; color: white; position: fixed; top: 0px; left: 0px; z-index: 999;
+}
+
+#headerText {
+    font-size: 70px; position: fixed; top: -10px; width: 100%; text-align: center;
+}
+
+#confirm {
+    position: absolute; 
+    top: 400px; 
+    right: 650px; 
+    background-color: lightsalmon; 
+    font-size: 40px; 
+    border-radius: 10px; 
+    border: none;
+    color: white;
+}
+#confirm:hover {
+    filter: brightness(80%);
+    color: grey;
+}
+
+#restart {
+    background-color: lightsalmon; 
+    color: white; 
+    font-size: 40px; 
+    border-radius: 10px; 
+    position: absolute; 
+    top: 180px; 
+    right: 50px; 
+    border: none; 
+    width: 200px; 
+    visibility: hidden;
+}
+#restart:hover {
+    filter: brightness(80%);
+    color: grey;
+}
+
+#yes {
+    background-color: green; 
+    position: absolute; 
+    top: 530px; 
+    right: 760px; 
+    color: white; 
+    border-radius: 10px; 
+    border: none; 
+    height: 50px; 
+    width: 130px; 
+    font-size: 40px; 
+    visibility: hidden;
+    text-decoration: none;
+    text-align: center;
+}
+#yes:hover {
+    filter: brightness(80%)
+}
+
+#fakeYes {
+    background-color: green; 
+    position: absolute; 
+    top: 530px; 
+    right: 660px; 
+    color: white; 
+    border-radius: 10px; 
+    border: none; 
+    height: 50px; 
+    width: 130px; 
+    font-size: 40px; 
+    visibility: hidden;
+}
+
+#no {
+    background-color: red; 
+    position: absolute; 
+    top: 530px; 
+    right: 560px; 
+    color: white; 
+    border-radius: 10px; 
+    border: none; 
+    height: 50px; 
+    width: 130px; 
+    font-size: 40px; 
+    visibility: hidden;
+}
+#no:hover {
+    filter: brightness(80%);
+}
+
+#fakeNo {
+    background-color: red; 
+    position: absolute; 
+    top: 530px; 
+    right: 660px; 
+    color: white; 
+    border-radius: 10px; 
+    border: none; 
+    height: 50px; 
+    width: 130px; 
+    font-size: 40px; 
+    visibility: hidden;
+}
+
+
+
+#correct {
+    background-color: lightsalmon; height: 60px; width: 135px; font-size: 50px; position: absolute; top: 350px; right: 700px; color: white; border: none; border-radius: 5px;
+}
+#correct:hover {
+    filter: brightness(80%);
+}
+
+#incorrect {
+    background-color: lightsalmon; height: 60px; width: 135px; font-size: 50px; position: absolute; top: 350px; right: 400px; color: white; border: none; border-radius: 5px;
+}
+#incorrect:hover {
+    filter: brightness(80%);
+}
+
+#higher {
+    background-color: lightsalmon; height: 100px; width: 250px; font-size: 70px; position: absolute; top: 550px; right: 700px; color: white; border: none; border-radius: 5px; visibility: hidden;
+}
+#higher:hover {
+    filter: brightness(80%);
+}
+
+#lower {
+    background-color: lightsalmon; height: 100px; width: 250px; font-size: 70px; position: absolute; top: 550px; right: 288px; color: white; border: none; border-radius: 5px; visibility: hidden;
+}
+#lower:hover {
+    filter: brightness(80%);
+}

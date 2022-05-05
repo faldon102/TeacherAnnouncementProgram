@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teacher Announcement Creator</title>
+        <script src="teacher.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background-color: #093373; width: 100%; min-height: 1680px; position: relative;" onload="getTitle(); kmLogo()" onscroll="line()">
+
+        <div class="header">
+            <b style="font-weight: 170px; font-size: 60px;">Teacher Announcements Creator</b>
+        </div>
+        <hr id="headerLine">
+
+        <!-- LOGO IMAGE BUTTONS -->
+        <a href="./homepage.html">
+            <img src="./logo.png" id="northParkLogo">
+        </a>
+        
+        <!-- TEXT: YOUR ANNOUNCEMENT HAS BEEN POSTED -->
+        <p id="displayTitle" style="color: white; font-family: Andale Mono, AndaleMono, monospace; font-size: 40px; position: absolute; top: 250px; width: 100%; text-align: center;"></p>
+
+        <button onclick="window.close()" id="close">Close Page</button>
+        <h1 style="position: absolute; top: 530px; right: 640px; font-size: 65px; font-family: Andale Mono, AndaleMono, monospace; color: white;">Go To</h1>
+
+        <!-- HOME BUTTON -->
+        <a href="./homepage.html" id="homepageButton">Home</a>
+        <a href="./announcement_input.html" id="createButton">Create</a>
+        <a href="./delete.html" id="deleteFinalPost">Delete</a>
+        <a href="./filter_search.html" id="searchFinalPost">Search</a>
+
+        <!-- FOOTER -->
+        <div id="footer">
+            
+            <!-- CONTACTS -->
+            <div>
+                <h2 class="h2Footer" style="position: absolute; bottom: 560px; left: 200px;">Phone: 647 - 416 - 7410</h2>
+                <h2 class="h2Footer" style="position: absolute; bottom: 510px; left: 200px;">Email: ann.program@gmail.com</h2>
+            </div>
+            
+            <hr id="shorterLineFooter">
+            
+            <!-- FEEDBACK SECTION -->
+            <form action="mailto: 861762@pdsb.net" method="POST">
+                <h1 class="h1Footer" style="position: absolute; bottom: 360px; left: 200px;">Feedback</h1>
+                <textarea id="feedbackTextarea" name="feedback" cols="30" rows="8"></textarea>
+                <button id="feedbackSendBtn">Send</button>
+            </form>
+            
+            <!-- ABOUT US -->
+            <div id="aboutUs">
+                <h1 class="h1Footer" style="position: absolute; bottom: 550px; right: 450px;">About Us</h1>
+                <p class="pFooter" style="position: absolute; bottom: 330px; right: 120px; width: 500px; height: 200px;">Founded in May of 2021, we, Announcements Co., provide a variety of services to our clients. Our flagship software products are the “Teacher Announcement Program,” enabling all teachers of North Park Secondary School to upload school announcements, and the “School Search Program,” enabling students to view all uploaded announcements, and schedule accordingly.</p>
+                <hr id="longerLineFooter">
+            </div>
+            
+            <!-- SOCIAL MEDIA LOGOS AND LINKS -->
+            <h1 class="h1Footer" style="position: absolute; bottom: 160px; right: 435px;">Follow Us</h1>
+            <a href="https://www.instagram.com/explore/locations/511992834/north-park-secondary-school/?hl=en">
+                <img class="instagramLogoFooter" src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png">
+            </a>
+
+            <a href="https://twitter.com/northparkssca?lang=en">
+                <img class="twitterLogoFooter" src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png">
+            </a>
+
+            <a href="https://m.facebook.com/profile.php?id=106176169421629">
+                <img class="facebookLogoFooter" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png">
+            </a>
+
+            <a href="https://ca.linkedin.com/company/north-park-secondary-school">
+                <img class="linkedInLogoFooter" src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png">
+            </a>
+
+            <!-- COPYRIGHT SECTION -->
+            <h2 class="h2Footer" style="position: absolute; bottom: 20px; left: 60px;">Copyright © 2021 Krish Mehta. All rights reserved.</h2>
+        
+            <a href="./ideas.html" id="logoTextInFooter">KM</a>
+            <hr id="smallLogoLineInFooter">
+            <hr id="largeLogoLineInFooter">
+            
+        </div>
+        
+    
+    </body>
+
+</html>
